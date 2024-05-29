@@ -104,3 +104,9 @@ C:\Work\Code\Microservices\CommandsService\obj\Debug\net8.0\refint\CommandsServi
 C:\Work\Code\Microservices\CommandsService\obj\Debug\net8.0\CommandsService.pdb
 C:\Work\Code\Microservices\CommandsService\obj\Debug\net8.0\CommandsService.genruntimeconfig.cache
 C:\Work\Code\Microservices\CommandsService\obj\Debug\net8.0\ref\CommandsService.dll
+C:\Work\Code\Microservices\CommandsService\bin\Debug\net8.0\appsettings.Production.json
+C:\Work\Code\Microservices\CommandsService\bin\Debug\net8.0\RabbitMQ.Client.dll
+C:\Work\Code\Microservices\CommandsService\bin\Debug\net8.0\Google.Protobuf.dll
+C:\Work\Code\Microservices\CommandsService\bin\Debug\net8.0\Grpc.Core.Api.dll
+C:\Work\Code\Microservices\CommandsService\bin\Debug\net8.0\Grpc.Net.Client.dll
+C:\Work\Code\Microservices\CommandsService\bin\Debug\net8.0\Grpc.Net.Common.dll

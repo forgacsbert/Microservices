@@ -1,0 +1,2 @@
+obj\Release\net8.0\Protos/Platforms.cs \
+obj\Release\net8.0\Protos/PlatformsGrpc.cs: Protos/platforms.proto

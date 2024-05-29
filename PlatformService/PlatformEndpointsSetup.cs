@@ -1,8 +1,8 @@
 using AutoMapper;
+using PlatformService.AsyncDataServices;
 using PlatformService.Data;
 using PlatformService.Dto;
 using PlatformService.Models;
-using PlatformService.SyncDataServices.Http;
 
 namespace PlatformService
 {
@@ -18,7 +18,7 @@ namespace PlatformService
         private static void MapCreatePlatform(IEndpointRouteBuilder endpoints)
         {
             endpoints.MapPost("/api/platforms", 
-                async (PlatformCreateDto platformCreateDto, IPlatformRepository platformRepository, IMapper mapper, ICommandDataClient commandDataClient) =>
+                async (PlatformCreateDto platformCreateDto, IPlatformRepository platformRepository, IMapper mapper, IMessageBusClient messageBusClient) =>
             {
                 var platform = mapper.Map<Platform>(platformCreateDto);
                 platformRepository.CreatePlatform(platform);
@@ -27,11 +27,13 @@ namespace PlatformService
 
                 try
                 {
-                    await commandDataClient.SendPlatformToCommandAsync(platformReadDto);
+                    var platformPublishedDto = mapper.Map<PlatformPublishDto>(platformReadDto);
+                    platformPublishedDto.Event = "Platform_Published";
+                    messageBusClient.PublishNewPlatform(platformPublishedDto);
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine($"--> Could not send synchronously: {ex.Message}");
+                    Console.WriteLine($"Could not publish to message bus: {ex.Message}");
                 }
 
                 return Results.Created($"/platforms/{platformReadDto.Id}", platformReadDto);
