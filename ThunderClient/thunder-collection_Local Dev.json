@@ -1,0 +1,144 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Local Dev",
+    "collectionId": "d9a1b407-d7c1-4462-8af3-0b63d14958a7",
+    "dateExported": "2024-05-29T08:33:08.116Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "06b3872a-66de-4f84-a92e-ffa1009547ec",
+            "name": "Platform Service",
+            "containerId": "",
+            "created": "2024-05-23T13:46:24.739Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "55a860b8-cf67-40ab-b532-eec935d5c238",
+            "name": "Commands Service",
+            "containerId": "",
+            "created": "2024-05-23T13:46:34.826Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "e80b6137-bc0c-4a81-ac7d-6c4a7ebd82c3",
+            "colId": "d9a1b407-d7c1-4462-8af3-0b63d14958a7",
+            "containerId": "06b3872a-66de-4f84-a92e-ffa1009547ec",
+            "name": "GetPlatforms",
+            "url": "http://localhost:5073/api/platforms",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-05-22T13:16:54.892Z",
+            "modified": "2024-05-29T08:02:33.981Z",
+            "headers": []
+        },
+        {
+            "_id": "6fa2b04e-c501-450c-8ee1-f03b7189aaab",
+            "colId": "d9a1b407-d7c1-4462-8af3-0b63d14958a7",
+            "containerId": "06b3872a-66de-4f84-a92e-ffa1009547ec",
+            "name": "GetPlatform",
+            "url": "http://localhost:5073/api/platforms/1",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-05-22T13:20:15.891Z",
+            "modified": "2024-05-22T13:20:21.847Z",
+            "headers": []
+        },
+        {
+            "_id": "443cdaab-93bd-48a0-ba70-b300e3887168",
+            "colId": "d9a1b407-d7c1-4462-8af3-0b63d14958a7",
+            "containerId": "06b3872a-66de-4f84-a92e-ffa1009547ec",
+            "name": "CreatePlatform",
+            "url": "http://localhost:5073/api/platforms",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-05-22T13:20:28.279Z",
+            "modified": "2024-05-22T13:21:22.119Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Docker\",\n  \"publisher\": \"Docker\",\n  \"cost\": \"Free\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "a330eea2-1f5d-435c-ae32-cb21543415bb",
+            "colId": "d9a1b407-d7c1-4462-8af3-0b63d14958a7",
+            "containerId": "55a860b8-cf67-40ab-b532-eec935d5c238",
+            "name": "Test",
+            "url": "http://localhost:5184/api/commands/platforms",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-05-23T13:46:44.216Z",
+            "modified": "2024-05-27T11:08:22.229Z",
+            "headers": []
+        },
+        {
+            "_id": "be359ceb-f30b-4102-b080-dc67858f4053",
+            "colId": "d9a1b407-d7c1-4462-8af3-0b63d14958a7",
+            "containerId": "55a860b8-cf67-40ab-b532-eec935d5c238",
+            "name": "Get platforms",
+            "url": "http://localhost:5184/api/commands/platforms",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-05-27T11:08:32.422Z",
+            "modified": "2024-05-27T11:08:38.732Z",
+            "headers": []
+        },
+        {
+            "_id": "cc7009b0-3b3c-409f-8d23-89209f88a98e",
+            "colId": "d9a1b407-d7c1-4462-8af3-0b63d14958a7",
+            "containerId": "55a860b8-cf67-40ab-b532-eec935d5c238",
+            "name": "Create platform",
+            "url": "http://localhost:5184/api/commands/platforms",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-05-27T11:08:53.481Z",
+            "modified": "2024-05-27T11:11:30.758Z",
+            "headers": []
+        },
+        {
+            "_id": "0c64d38f-3d39-4d83-820e-b434c5f1f93b",
+            "colId": "d9a1b407-d7c1-4462-8af3-0b63d14958a7",
+            "containerId": "55a860b8-cf67-40ab-b532-eec935d5c238",
+            "name": "Create command",
+            "url": "http://localhost:5184/api/commands/platforms/6",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-05-27T11:09:00.786Z",
+            "modified": "2024-05-28T07:18:34.943Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"HowTo\" : \"Build a .net Project\",\n  \"CommandLIne\": \"dotnet build\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "ed989162-91dc-4611-826f-0b0f6c66e724",
+            "colId": "d9a1b407-d7c1-4462-8af3-0b63d14958a7",
+            "containerId": "55a860b8-cf67-40ab-b532-eec935d5c238",
+            "name": "Get commands",
+            "url": "http://localhost:5184/api/commands/platforms/6",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-05-27T11:16:15.506Z",
+            "modified": "2024-05-28T07:19:00.280Z",
+            "headers": []
+        },
+        {
+            "_id": "eefe0684-5579-4f39-82c1-8dc7aa2d811f",
+            "colId": "d9a1b407-d7c1-4462-8af3-0b63d14958a7",
+            "containerId": "55a860b8-cf67-40ab-b532-eec935d5c238",
+            "name": "Get command",
+            "url": "http://localhost:5184/api/commands/platforms/6/1",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-05-27T11:19:21.381Z",
+            "modified": "2024-05-28T07:19:10.133Z",
+            "headers": []
+        }
+    ],
+    "ref": "D2seXz4OPj83DAj7v97-hzpwluw_Lma_Dj400vaFqcxfNlzPGJag_nvR-ODG4pIQU7iNlnymyANFVRRZPiaC_w"
+}

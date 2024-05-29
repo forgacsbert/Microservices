@@ -1,0 +1,60 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Docker Env",
+    "collectionId": "87dce957-3c6d-4944-ba85-7ac09c9027bb",
+    "dateExported": "2024-05-29T08:33:30.047Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "ee246f16-0fde-4ebb-9411-bc992d8d5477",
+            "name": "Platform Service",
+            "containerId": "",
+            "created": "2024-05-23T08:55:26.249Z",
+            "sortNum": 10000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "9ac4db82-d4ae-457c-95e4-1c07c64c00d7",
+            "colId": "87dce957-3c6d-4944-ba85-7ac09c9027bb",
+            "containerId": "ee246f16-0fde-4ebb-9411-bc992d8d5477",
+            "name": "GetPlatforms",
+            "url": "http://localhost:8000/api/platforms",
+            "method": "GET",
+            "sortNum": 2500,
+            "created": "2024-05-23T08:55:40.246Z",
+            "modified": "2024-05-23T08:56:18.824Z",
+            "headers": []
+        },
+        {
+            "_id": "977a7c45-7794-46d2-a22a-c3e2d828b29f",
+            "colId": "87dce957-3c6d-4944-ba85-7ac09c9027bb",
+            "containerId": "ee246f16-0fde-4ebb-9411-bc992d8d5477",
+            "name": "GetPlatform",
+            "url": "http://localhost:8000/api/platforms/1",
+            "method": "GET",
+            "sortNum": 5000,
+            "created": "2024-05-23T08:55:44.619Z",
+            "modified": "2024-05-23T08:56:37.249Z",
+            "headers": []
+        },
+        {
+            "_id": "cce8c726-e9a5-492d-b715-183658b20fdb",
+            "colId": "87dce957-3c6d-4944-ba85-7ac09c9027bb",
+            "containerId": "ee246f16-0fde-4ebb-9411-bc992d8d5477",
+            "name": "CreatePlatform",
+            "url": "http://localhost:8000/api/platforms",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-05-23T08:55:52.081Z",
+            "modified": "2024-05-23T08:56:42.508Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Docker\",\n  \"publisher\": \"Docker\",\n  \"cost\": \"Free\"\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "Aj3ykMrVsQR03xaXBLlf73nxJK8pxu4oG8CV_FVE16jEmuckTJTDaIQbgtmAmye8GoTshNNjBnRq1Mws2iBkgg"
+}

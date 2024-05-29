@@ -1,0 +1,206 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "K8S",
+    "collectionId": "97710f68-cf23-4214-8493-f21d9bc2fb45",
+    "dateExported": "2024-05-29T08:33:34.674Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "d709bed6-484a-45c0-90c9-2b036b47b604",
+            "name": "Platform Service",
+            "containerId": "64306a54-4045-4f5e-8350-47cb4621e9fe",
+            "created": "2024-05-23T13:25:02.738Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "e2d8b8db-e4c5-4853-8c62-166da5235e61",
+            "name": "Platform Service",
+            "containerId": "e2841039-aa43-4252-891a-ccbd2e419966",
+            "created": "2024-05-24T12:28:34.369Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "64306a54-4045-4f5e-8350-47cb4621e9fe",
+            "name": "Node Port",
+            "containerId": "",
+            "created": "2024-05-24T12:28:10.729Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "e4b61f0a-a399-49c1-880c-a51565b5e044",
+            "name": "Commands Service",
+            "containerId": "e2841039-aa43-4252-891a-ccbd2e419966",
+            "created": "2024-05-28T08:12:17.340Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "e2841039-aa43-4252-891a-ccbd2e419966",
+            "name": "Ngnix",
+            "containerId": "",
+            "created": "2024-05-24T12:28:30.088Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "ba3c4db2-d475-45d2-8575-5016050f3d76",
+            "colId": "97710f68-cf23-4214-8493-f21d9bc2fb45",
+            "containerId": "d709bed6-484a-45c0-90c9-2b036b47b604",
+            "name": "GetPlatforms",
+            "url": "http://localhost:32278/api/platforms",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-05-23T13:25:30.859Z",
+            "modified": "2024-05-23T13:26:07.255Z",
+            "headers": []
+        },
+        {
+            "_id": "5115e593-3188-4242-8277-157f16b69628",
+            "colId": "97710f68-cf23-4214-8493-f21d9bc2fb45",
+            "containerId": "e2d8b8db-e4c5-4853-8c62-166da5235e61",
+            "name": "GetPlatforms",
+            "url": "http://forgacsbert.com/api/platforms",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-05-24T12:28:34.369Z",
+            "modified": "2024-05-24T12:29:09.699Z",
+            "headers": []
+        },
+        {
+            "_id": "78b55e0f-78ad-4cc3-b975-ac10976cd89f",
+            "colId": "97710f68-cf23-4214-8493-f21d9bc2fb45",
+            "containerId": "d709bed6-484a-45c0-90c9-2b036b47b604",
+            "name": "GetPlatform",
+            "url": "http://localhost:32278/api/platforms/1",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-05-23T13:25:34.471Z",
+            "modified": "2024-05-23T13:26:09.503Z",
+            "headers": []
+        },
+        {
+            "_id": "9d3e78e1-7f07-4426-8dbd-419613658668",
+            "colId": "97710f68-cf23-4214-8493-f21d9bc2fb45",
+            "containerId": "e2d8b8db-e4c5-4853-8c62-166da5235e61",
+            "name": "GetPlatform",
+            "url": "http://forgacsbert.com/api/platforms/1",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-05-24T12:28:34.370Z",
+            "modified": "2024-05-24T12:29:14.089Z",
+            "headers": []
+        },
+        {
+            "_id": "d6e03a36-1b11-451e-a2fa-2ad83fa5482a",
+            "colId": "97710f68-cf23-4214-8493-f21d9bc2fb45",
+            "containerId": "d709bed6-484a-45c0-90c9-2b036b47b604",
+            "name": "CreatePlatform",
+            "url": "http://localhost:32278/api/platforms",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-05-23T13:25:41.176Z",
+            "modified": "2024-05-23T13:26:11.907Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Docker\",\n  \"publisher\": \"Docker\",\n  \"cost\": \"Free\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "427caa03-a6db-43eb-b04f-272b7fe557f8",
+            "colId": "97710f68-cf23-4214-8493-f21d9bc2fb45",
+            "containerId": "e2d8b8db-e4c5-4853-8c62-166da5235e61",
+            "name": "CreatePlatform",
+            "url": "http://forgacsbert.com/api/platforms",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-05-24T12:28:34.371Z",
+            "modified": "2024-05-29T08:12:56.825Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"test\",\n  \"publisher\": \"test\",\n  \"cost\": \"Free\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "88306afc-a627-4d9b-8de0-2bcc0cb2ddd9",
+            "colId": "97710f68-cf23-4214-8493-f21d9bc2fb45",
+            "containerId": "e4b61f0a-a399-49c1-880c-a51565b5e044",
+            "name": "Test",
+            "url": "http://forgacsbert.com/api/commands/platforms",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-05-28T08:12:17.343Z",
+            "modified": "2024-05-28T08:12:50.815Z",
+            "headers": []
+        },
+        {
+            "_id": "ed8c1557-a790-44d6-b438-e0c9d403774c",
+            "colId": "97710f68-cf23-4214-8493-f21d9bc2fb45",
+            "containerId": "e4b61f0a-a399-49c1-880c-a51565b5e044",
+            "name": "Get platforms",
+            "url": "http://forgacsbert.com/api/commands/platforms",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-05-28T08:12:17.343Z",
+            "modified": "2024-05-28T08:13:06.434Z",
+            "headers": []
+        },
+        {
+            "_id": "36d7e74c-34b9-40ae-b384-b51ffae09d4d",
+            "colId": "97710f68-cf23-4214-8493-f21d9bc2fb45",
+            "containerId": "e4b61f0a-a399-49c1-880c-a51565b5e044",
+            "name": "Create platform",
+            "url": "http://forgacsbert.com/api/commands/platforms",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-05-28T08:12:17.343Z",
+            "modified": "2024-05-28T08:13:09.716Z",
+            "headers": []
+        },
+        {
+            "_id": "acc268f4-a6a1-4bf5-b98c-cd1317075a7d",
+            "colId": "97710f68-cf23-4214-8493-f21d9bc2fb45",
+            "containerId": "e4b61f0a-a399-49c1-880c-a51565b5e044",
+            "name": "Create command",
+            "url": "http://forgacsbert.com/api/commands/platforms/1003",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-05-28T08:12:17.343Z",
+            "modified": "2024-05-28T08:13:47.886Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"HowTo\" : \"Build a .net Project\",\n  \"CommandLIne\": \"dotnet build\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "8c45a8f3-995f-4b9c-af72-14b02e16da41",
+            "colId": "97710f68-cf23-4214-8493-f21d9bc2fb45",
+            "containerId": "e4b61f0a-a399-49c1-880c-a51565b5e044",
+            "name": "Get commands",
+            "url": "http://forgacsbert.com/api/commands/platforms/1003",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-05-28T08:12:17.343Z",
+            "modified": "2024-05-28T08:13:53.363Z",
+            "headers": []
+        },
+        {
+            "_id": "7873d228-b892-46b6-ab0a-2e74a231d457",
+            "colId": "97710f68-cf23-4214-8493-f21d9bc2fb45",
+            "containerId": "e4b61f0a-a399-49c1-880c-a51565b5e044",
+            "name": "Get command",
+            "url": "http://forgacsbert.com/api/commands/platforms/1003/1",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-05-28T08:12:17.343Z",
+            "modified": "2024-05-28T08:13:58.136Z",
+            "headers": []
+        }
+    ],
+    "ref": "fLA8ynCoCK4QtpDwOIZDrvAXFVexKh2ecKalZRwrU2JJISDwv4kcBoeL1amqvTz4Eu4g4ncx4Lo-vnjVJK4Vhg"
+}
